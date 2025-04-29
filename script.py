@@ -6,3 +6,5 @@ for j in range(4):
     print(tab[j])    
 
 print("Bonne vacances")    
+
+allo test de git
