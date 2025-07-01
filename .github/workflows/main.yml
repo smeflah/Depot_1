@@ -1,0 +1,13 @@
+# Liste des étapes (stages) à exécuter
+stages:
+  - test  # Ici, une seule étape "test"
+
+# Job de test unitaire
+test_unitaire:
+  stage: test  # Ce job appartient à l'étape "test"
+
+  image: python:3.10  # GitLab utilise une image Docker avec Python
+
+  script:
+    - pip install -r requirements.txt  # On installe les dépendances
+    - pytest tests/                    # On lance les tests avec pytest
