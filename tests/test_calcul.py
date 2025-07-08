@@ -13,4 +13,7 @@ class TestCalcul(unittest.TestCase):
         self.assertEqual(addition(2, 3), 5)
 
 # Si on exécute ce fichier directement, les tests sont lancés
-unittest.main()
+# Lancer les tests uniquement si ce fichier est exécuté directement
+if __name__ == "__main__":
+    unittest.main()
+
