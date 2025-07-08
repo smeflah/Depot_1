@@ -13,5 +13,4 @@ class TestCalcul(unittest.TestCase):
         self.assertEqual(addition(2, 3), 5)
 
 # Si on exécute ce fichier directement, les tests sont lancés
-if __name__ == "__main__":
-    unittest.main()
+unittest.main()
